@@ -1,0 +1,17 @@
+\documentclass{standalone}
+
+\usepackage{amssymb}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\definecolor{bg}{rgb}{0.9296875, 0.9296875, 0.9296875}
+\pagecolor{bg}
+
+\begin{document}
+    \begin{tikzcd}[background color=bg]
+        & & U_1 \arrow[loop right, "id_{U_1}"] \arrow[d] \\
+        X \arrow[loop left, "id_X"] \arrow[rru, bend left=45] \arrow[rrd, bend right=45] & \displaystyle{\varnothing} \arrow[loop below, "id_\varnothing"] \arrow[l] \arrow[from=3-3, to=1-3, bend left=50, shift left=2, shorten=-2] \arrow[from=1-3, to=3-3, bend right=50] \arrow[r, crossing over] \arrow[rd, bend right] \arrow[ru, bend left] & U_2 \arrow[loop right, "id_{U_2}"] \arrow[d, shift left=1.5] \arrow[u, shift right=1.5] \arrow[from=2-1, to=2-3, bend left, crossing over] \\
+        & & U_3 \arrow[loop right, "id_{U_3}"] \arrow[u] \\
+    \end{tikzcd}
+
+\end{document}

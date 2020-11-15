@@ -1,0 +1,15 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\begin{document}
+
+    \begin{tikzcd}
+        && \color{red}{F} \arrow[loop above] \arrow[lldd, shorten=-2.5, bend right=50, shift right=2.5] \arrow[ddrr, bend left=50] \arrow[dd, bend left=50] \arrow[dddl, bend right=50] \arrow[dddr, bend left=50] \\
+        \\
+        \color{red}{A} \arrow[loop left] \arrow[uurr, bend left=50] \arrow[rr, crossing over] \arrow[rrrr, bend left, crossing over] \arrow[dr] \arrow[drrr, bend right=10, crossing over] && B \arrow[loop above] \arrow[rr, crossing over] && \color{blue}{C} \arrow[loop right] \\
+        & D \arrow[loop below] \arrow[urrr, bend right=70] && E \arrow[loop below] \arrow[ur] \\
+    \end{tikzcd}
+
+\end{document}

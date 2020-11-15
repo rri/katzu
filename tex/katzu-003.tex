@@ -1,0 +1,12 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\begin{document}
+
+    \begin{tikzcd}
+    	A \arrow[loop below, "id_A", overlay, distance=1em] \arrow[r, "f", overlay] \arrow[r, "id_B \circ f", bend left=130, distance=8em, blue] \arrow[r, "f \circ id_A", bend right=130, distance=8em, red] & B \arrow[loop above, "id_B", distance=1em, overlay] \\
+    \end{tikzcd}
+
+\end{document}

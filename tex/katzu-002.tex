@@ -1,0 +1,12 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\begin{document}
+
+    \begin{tikzcd}
+    	A \arrow[r, "f"] \arrow[rr, gray, "g \circ f", bend left=50] \arrow[rrr, blue, "h \circ (g \circ f)", bend left=100] \arrow[rrr, red, "(h \circ g) \circ f)", bend right=100] & B \arrow[r, "g"] \arrow[rr, gray, "h \circ g", bend right=50] & C \arrow[r, "h"] & D \\
+    \end{tikzcd}
+
+\end{document}
