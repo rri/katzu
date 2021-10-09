@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{cd}
+
+\begin{document}
+
+    \begin{tikzcd}
+                      & & \mathcal{L} \\
+                      & & \\
+	    \mathcal{P} \arrow[r, "m", overlay, gray] \arrow[uurr, "l", overlay] \arrow[ddrr, "r"'] & {\color{gray}{\mathcal{P'}}} \arrow[uur, "l'"', overlay, gray] \arrow[ddr, "r'", overlay, gray] & \\
+	                  & & \\
+	                  & & \mathcal{R} \\
+    \end{tikzcd}
+
+\end{document}
